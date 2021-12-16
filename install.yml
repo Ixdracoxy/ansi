@@ -1,10 +1,9 @@
 - hosts: all
-  enabled: true
   tasks:
-
     - name: install webserver
       package:
         name: 
           - "{{webserver}}"
           - git
         state: present
+        enabled: true
