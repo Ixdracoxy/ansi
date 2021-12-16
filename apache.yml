@@ -1,0 +1,16 @@
+- hosts: all
+  task:
+    - name: Install Apache
+      package:
+        name:
+          - httpd
+          - git
+        state: present
+    - name: start apache
+      service:
+        name: httpd
+        state: started
+        enable: true
+    - name: deploiement du site
+      git:
+        repo: 'https://github.com/cloudacademy/static-website-example'
