@@ -10,7 +10,7 @@
       service:
         name: httpd
         state: started
-        enable: true
+        enabled: true
     - name: deploiement du site
       git:
         repo: 'https://github.com/cloudacademy/static-website-example'
