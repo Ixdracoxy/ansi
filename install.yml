@@ -6,4 +6,3 @@
           - "{{webserver}}"
           - git
         state: present
-        enabled: true
