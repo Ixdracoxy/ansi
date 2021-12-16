@@ -1,4 +1,5 @@
 - hosts: all
+  enabled: true
   tasks:
 
     - name: install webserver
