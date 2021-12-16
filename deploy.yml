@@ -3,5 +3,5 @@
 
     - name: Déploiement site web
       git:
-        repo: "{{webserver}}"
+        repo: "{{repo}}"
         dest: /var/www/html/website
